@@ -7,9 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "14px",
+          lg: "20px",
+        },
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "1170px",
+        },
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#000000d1",
+        },
+        secondary: {
+          DEFAULT: "#000000bf",
+        },
+      },
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"],
       },
     },
   },
