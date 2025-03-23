@@ -24,7 +24,7 @@ module.exports = {
           DEFAULT: "#315c87",
         },
         secondary: {
-          DEFAULT: "#000000bf",
+          DEFAULT: "#000000c2",
         },
       },
       keyframes: {
