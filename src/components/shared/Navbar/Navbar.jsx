@@ -21,22 +21,22 @@ const Navbar = () => {
         </div>
         {/* menu  */}
         <div className="hidden md:block">
-          <div className="flex items-center gap-8">
-            <ul className="flex items-center gap-8">
-              <li className="text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+          <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
+            <ul className="flex items-center gap-4 md:gap-6 lg:gap-8">
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
                 Driving Test Routes
               </li>
-              <li className="text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
                 How it Works
               </li>
-              <li className="text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
                 Resources
               </li>
-              <li className="text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
                 Support
               </li>
             </ul>
-            <span>
+            <span className="hidden lg:block">
               <IoLogoInstagram className="text-white w-7 h-7" />
             </span>
             <button className="bg-[#fae13d] text-primary py-3 px-5 rounded-lg text-base font-bold leading-normal">
