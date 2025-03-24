@@ -1,22 +1,25 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-primary py-2 ">
+    <div className="bg-primary py-2 sticky top-0 z-50">
       <div className="container flex items-center justify-between">
         {/* logo  */}
         <div className="">
-          <Link href='/'>
-          <Image
-            src="/assets/nav_logo.png"
-            alt="navlogo"
-            width={150}
-            height={120}
-          />
+          <Link href="/">
+            <Image
+              src="/assets/nav_logo.png"
+              alt="navlogo"
+              width={150}
+              height={120}
+            />
           </Link>
         </div>
         {/* menu  */}
@@ -47,8 +50,55 @@ const Navbar = () => {
 
         {/* small device  */}
         <div className="block md:hidden">
-          <FaBars className="w-7 h-7 text-white cursor-pointer"/>
+          {isOpen ? (
+            <RxCross2
+              className="w-7 h-7 text-white cursor-pointer"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          ) : (
+            <FaBars
+              className="w-7 h-7 text-white cursor-pointer"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          )}
         </div>
+      </div>
+
+      {/* menu part  */}
+      <div
+        className={`${
+          isOpen ? "w-[70%] left-0" : "w-full -left-[100%]"
+        } h-[50%] fixed top-0 transition-all duration-500 ease-in-out bg-primary  `}
+      >
+        {isOpen && (
+          <div>
+            {/* logo  */}
+            <div className="w-full flex items-center justify-center pt-5">
+              <Link href="/">
+                <Image
+                  src="/assets/nav_logo.png"
+                  alt="navlogo"
+                  width={150}
+                  height={120}
+                />
+              </Link>
+            </div>
+            <ul className="flex flex-col items-center gap-8 py-7">
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+                Driving Test Routes
+              </li>
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+                How it Works
+              </li>
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+                Resources
+              </li>
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+                Support
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
