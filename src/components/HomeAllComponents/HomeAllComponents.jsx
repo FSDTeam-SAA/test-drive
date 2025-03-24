@@ -3,6 +3,8 @@ import Banner from "./Banner/Banner";
 import DrivingTestRoutes from "./DrivingTestRoutes/DrivingTestRoutes";
 import DrivingTestReview from "./DrivingTestReview/DrivingTestReview";
 import MonthsAppSubscription from "./MonthsAppSubscription/MonthsAppSubscription";
+import TestCentreCoverage from "./TestCentreCoverage/TestCentreCoverage";
+import PracticalDrivingTest from "./PracticalDrivingTest/PracticalDrivingTest";
 
 const HomeAllComponents = () => {
   return (
@@ -17,6 +19,14 @@ const HomeAllComponents = () => {
 
       <section>
         <MonthsAppSubscription />
+      </section>
+
+      <section>
+        <TestCentreCoverage />
+      </section>
+
+      <section>
+        <PracticalDrivingTest />
       </section>
 
       <section>
