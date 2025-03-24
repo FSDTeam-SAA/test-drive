@@ -2,9 +2,9 @@ import React from "react";
 
 const TestCentreCoverage = () => {
   return (
-    <div className="pt-[100px]">
+    <div className="pt-[60px] 2xl:pt-[100px]">
       <div className="container">
-        <h2 className="text-3xl font-bold leading-[32px] text-secondary text-center">
+        <h2 className="text-2xl 2xl:text-3xl font-bold leading-[32px] text-secondary text-center">
           <strong>Complete</strong> UK Test Centre Coverage
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">

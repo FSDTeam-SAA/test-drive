@@ -4,13 +4,13 @@ import React from 'react';
 
 const PracticalDrivingTest = () => {
     return (
-        <div className='pt-[100px] pb-10 container'>
-            <h2 className='text-3xl font-medium leading-[32px] text-secondary text-center'>The Practical Driving Test. What happens.</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-12'>
+        <div className='pt-[60px] 2xl:pt-[100px] container'>
+            <h2 className='text-2xl 2xl:text-3xl font-medium leading-[32px] text-secondary text-center'>The Practical Driving Test. What happens.</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-6 2xl:mt-12'>
                 <div className='md:col-span-1'>
                     <Image className='w-full h-[320px]' src="/assets/driving_test.jpg" alt='driving test' width={400} height={320}/>
-                    <h4 className='text-[27px] font-medium leading-[29px] text-secondary pt-3'>5 Part Driving Test.</h4>
-                    <p className='text-lg font-medium text-secondary leading-[20px] pt-12'>There are 5 parts to the practical driving test;</p>
+                    <h4 className='text-2xl 2xl:text-[27px] font-medium leading-[29px] text-secondary pt-3'>5 Part Driving Test.</h4>
+                    <p className='text-lg font-medium text-secondary leading-[20px] pt-6 2xl:pt-12'>There are 5 parts to the practical driving test;</p>
                     <ul className='list-decimal pl-5 pt-6'>
                         <li className='text-[15px] font-light leading-[20px] text-secondary'>Eyesight Check</li>
                         <li className='text-[15px] font-light leading-[20px] text-secondary py-2'>'Show me tell me' vehicle safety questions.</li>
@@ -36,8 +36,8 @@ const PracticalDrivingTest = () => {
                 </div>
                 <div className='md:col-span-1'>
                     <Image className='w-full h-[320px]' src="/assets/pass_plus.jpg" alt='pass plus' width={400} height={320}/>
-                    <h4 className='text-[27px] font-medium leading-[29px] text-secondary pt-3'>Pass Plus.</h4>
-                    <p className='text-[15px] font-thin leading-[20px] text-secondary pt-12'>Pass Plus is a practical training course that takes around 6 hours for drivers to improve their driving skills.</p>
+                    <h4 className='text-2xl 2xl:text-[27px] font-medium leading-[29px] text-secondary pt-3'>Pass Plus.</h4>
+                    <p className='text-[15px] font-thin leading-[20px] text-secondary pt-6 2xl:pt-12'>Pass Plus is a practical training course that takes around 6 hours for drivers to improve their driving skills.</p>
                     <p className='text-[15px] font-thin leading-[20px] text-secondary pt-2'>It can be taken at any time although it should be most useful to new drivers in the year after passing their test.</p>
                     <p className='text-[15px] font-thin leading-[20px] text-secondary pt-2'>Once you've completed Pass Plus you can apply for car insurance discounts.</p>
                     <p className='text-[15px] font-thin leading-[20px] text-secondary pt-2'>You'll need a Pass Plus registered approved driving instructor (ADI) to teach you.</p>

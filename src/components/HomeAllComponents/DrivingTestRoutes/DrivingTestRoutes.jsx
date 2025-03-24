@@ -41,9 +41,9 @@ const drivingTestRoutesData = [
 
 const DrivingTestRoutes = () => {
     return (
-        <div className='py-[100px]'>
+        <div className='py-[50px] 2xl:py-[100px]'>
             <div className='container'>
-                <h2 className='text-3xl font-medium leading-[32px] text-secondary text-center pb-10'>What are Sat Nav Driving Test Routes?</h2>
+                <h2 className='text-2xl 2xl:text-3xl font-medium leading-[32px] text-secondary text-center pb-6 2xl:pb-10'>What are Sat Nav Driving Test Routes?</h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                     {
                         drivingTestRoutesData?.map((data)=>{
