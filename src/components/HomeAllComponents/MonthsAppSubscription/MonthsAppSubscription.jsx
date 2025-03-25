@@ -7,7 +7,7 @@ const MonthsAppSubscription = () => {
     <div>
       <div className="container">
         <h2 className="text-2xl 2xl:text-3xl font-bold leading-[32px] text-secondary text-center pt-2 pb-10">
-          2 Months App Subscription <br className="block md:hidden"/> for the price of one driving  <br className="block md:hidden"/> lesson!
+          6 Months App Subscription <br className="block md:hidden"/> for the price of one driving  <br className="block md:hidden"/> lesson!
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="md:col-span-1">

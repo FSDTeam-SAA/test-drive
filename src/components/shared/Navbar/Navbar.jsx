@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { IoLogoInstagram } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import Link from "next/link";
@@ -12,20 +11,16 @@ const Navbar = () => {
     <div className="bg-primary py-2 sticky top-0 z-50">
       <div className="container flex items-center justify-between">
         {/* logo  */}
-        <div className="">
-          <Link href="/">
-            <Image
-              src="/assets/nav_logo.png"
-              alt="navlogo"
-              width={150}
-              height={120}
-            />
-          </Link>
+        <div className="text-4xl font-bold text-white">
+          <Link href="/">Test Drive</Link>
         </div>
         {/* menu  */}
         <div className="hidden md:block">
           <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
             <ul className="flex items-center gap-4 md:gap-6 lg:gap-8">
+              <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
+                Home
+              </li>
               <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
                 Driving Test Routes
               </li>
@@ -39,10 +34,7 @@ const Navbar = () => {
                 Support
               </li>
             </ul>
-            <span className="hidden lg:block">
-              <IoLogoInstagram className="text-white w-7 h-7" />
-            </span>
-            <button className="bg-[#fae13d] text-primary py-3 px-5 rounded-lg text-base font-bold leading-normal">
+            <button className="bg-[#315c87] text-white py-3 px-5 rounded-lg text-base font-bold leading-normal">
               Reviews
             </button>
           </div>
@@ -74,14 +66,9 @@ const Navbar = () => {
           <div>
             {/* logo  */}
             <div className="w-full flex items-center justify-center pt-5">
-              <Link href="/">
-                <Image
-                  src="/assets/nav_logo.png"
-                  alt="navlogo"
-                  width={150}
-                  height={120}
-                />
-              </Link>
+              <div className="text-4xl font-bold text-white">
+                <Link href="/">Test Drive</Link>
+              </div>
             </div>
             <ul className="flex flex-col items-center gap-8 py-7">
               <li className="text-[15px] lg:text-[17px] 2xl:text-lg font-normal cursor-pointer text-white leading-[21px]">
